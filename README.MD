@@ -1,9 +1,12 @@
 # 🏐 Smart Volleyball Referee System BY ABHINAV N DEVADIGA 
 ### AI-Powered Volleyball Referee Dashboard (YOLO + Streamlit + GPU)
 ---
+# 🎬 Dashboard Demo
+### 🔹 REFREE DEMO
+
+![DASHBOARD](media/pic1.png) ![DASHBOARD](media/pic2.png) 
 
 # 🎬 Demo Output Videos
-
 
 ### 🔹 Ball Detection  
 
