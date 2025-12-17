@@ -1,143 +1,172 @@
-🏐 Smart Volleyball Referee System
-By Abhinav N Devadiga
-🎬 Dashboard Demo
-<div align="center"> <table> <tr> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/pic1.png" width="400"/> </td> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/pic2.png" width="400"/> </td> </tr> </table> </div>
-🎥 Demo Output Videos
-🔹 Ball Detection
-<div align="center"> <table> <tr> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/balldetection.gif" width="400"/> </td> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/y7Detect_volleyball15.gif" width="400"/> </td> </tr> </table> </div>
-🔹 Court Detection
-<div align="center"> <table> <tr> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/court.gif" width="400"/> </td> </tr> </table> </div>
-🔹 Player Detection
-<div align="center"> <table> <tr> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/players_men.gif" width="400"/> </td> </tr> </table> </div>
-🔹 Action Detection
-<div align="center"> <table> <tr> <td style="border:1px solid #ccc; padding:5px;"> <img src="media/sliding_window.gif" width="400"/> </td> </tr> </table> </div>
-🧠 AI-Powered Volleyball Referee Dashboard
+# 🏐 Smart Volleyball Referee System  
+### **AI-Powered Officiating & Game Enhancement Using Computer Vision**  
+**Author: Abhinav N Devadiga**
 
-(YOLO + Streamlit + GPU)
+---
 
-This project is a real-time AI Volleyball Referee System built using Ultralytics YOLO, OpenCV, and Streamlit.
+## 🎬 Dashboard Overview
 
-The system can:
+<div align="center">
+  <table>
+    <tr>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/pic1.png" width="420"/>
+        <p align="center"><b>Live Dashboard – Detection & Scoring View</b></p>
+      </td>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/pic2.png" width="420"/>
+        <p align="center"><b>Dashboard Controls & Camera Inputs</b></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-🟡 Detect the volleyball
+---
 
-🔵 Detect player actions (spike, block, serve, receive, set)
+## 🎥 AI Detection Output Demonstrations
 
-🟢 Detect the court boundary
+### 🟡 Ball Detection
 
-🎯 Decide IN / OUT
+<div align="center">
+  <table>
+    <tr>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/balldetection.gif" width="420"/>
+        <p align="center"><b>Real-Time Volleyball Detection</b></p>
+      </td>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/y7Detect_volleyball15.gif" width="420"/>
+        <p align="center"><b>YOLO-Based Ball Tracking Accuracy</b></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-🏆 Automatically award points
+---
 
-⚡ Run in real-time on GPU (RTX 3050 recommended)
+### 🟢 Court & Player Detection
 
-Input sources:
+<div align="center">
+  <table>
+    <tr>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/court.gif" width="420"/>
+        <p align="center"><b>Court Boundary Detection</b></p>
+      </td>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/players_men.gif" width="420"/>
+        <p align="center"><b>Multi-Player Detection & Tracking</b></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-💻 Laptop Webcam
+---
 
-📱 Mobile Camera (IP Webcam / DroidCam)
+### 🔵 Action Recognition
 
-📂 Uploaded match videos
+<div align="center">
+  <table>
+    <tr>
+      <td style="border:2px solid #444; border-radius:8px; padding:8px;">
+        <img src="media/sliding_window.gif" width="420"/>
+        <p align="center"><b>Action Detection (Spike / Block / Serve)</b></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
-All inside a clean, interactive dashboard.
+---
 
-🚀 Features
-🔍 AI Detection
+## 🧠 Project Description
 
-Ball detection
+The **Smart Volleyball Referee System** is a **real-time AI officiating platform** built using  
+**Ultralytics YOLO, OpenCV, PyTorch, and Streamlit**.
 
-Player action detection
+It assists referees and analysts by **automatically detecting gameplay events**, improving accuracy, fairness, and match analysis.
 
-Court detection
+### 🎯 Core Capabilities
+- 🟡 Volleyball detection  
+- 🔵 Player action recognition (spike, block, serve, receive, set)  
+- 🟢 Court boundary detection  
+- 🎯 IN / OUT decision logic  
+- 🏆 Automatic point assignment  
+- ⚡ GPU-accelerated real-time inference  
 
-IN / OUT logic
+---
 
-Auto score decision
+## 🖥 Input Sources Supported
 
-HD / SD inference modes
+- 💻 Laptop webcam  
+- 📱 Mobile camera (IP Webcam / DroidCam)  
+- 📂 Uploaded match videos  
 
-GPU-accelerated inference
+All processed inside a **clean, real-time dashboard interface**.
 
-🖥 Dashboard
+---
 
-Laptop webcam input
+## 🚀 Features
 
-Mobile camera input (manual URL + auto detect)
+### 🔍 AI Features
+- Ball detection  
+- Player detection  
+- Action classification  
+- Court detection  
+- IN / OUT decision system  
+- Auto scoring logic  
+- HD / SD inference modes  
 
-Video upload
+### 🖥 Dashboard Features
+- Webcam & mobile camera input  
+- Video upload support  
+- FPS & latency monitoring  
+- Live connection status  
+- Two-column responsive layout  
+- Clean UI optimized for live matches  
 
-FPS counter
+---
 
-Latency counter
+## 🧰 Tech Stack
 
-Live connection status
+- **Python**
+- **Streamlit**
+- **OpenCV**
+- **Ultralytics YOLOv8 / YOLO11**
+- **PyTorch (CUDA 12.x)**
+- **Requests**
 
-Live preview + detection window
+### 💻 Recommended Hardware
+- NVIDIA RTX 3050 or higher  
+- Any CUDA-enabled GPU  
 
-Fixed two-column layout
+---
 
-Clean real-time UI
+## ▶️ How to Run
 
-🧠 Tech Stack
-
-Python
-
-Streamlit
-
-OpenCV
-
-Ultralytics YOLOv8 / YOLO11
-
-PyTorch (CUDA 12.x)
-
-Requests
-
-Recommended Hardware
-
-✔ NVIDIA RTX 3050 or higher
-
-✔ Any CUDA-enabled GPU
-
-▶️ How to Run
-🔹 Using Python Virtual Environment
+### 🔹 Using Python Virtual Environment
+```bash
 C:\projects\VOLLEYBAL> venv\Scripts\activate
 streamlit run dashboard.py
-
-🔹 Directly using Batch File
+🔹 Using Batch File
 Run_Dashboard.bat
 
 📄 License
 
 This project is licensed under the MIT License.
-You are free to use, modify, distribute, and commercialize this project with attribution.
+You are free to use, modify, distribute, and commercialize this project with proper attribution.
 
-📜 MIT License (Create LICENSE file)
+👤 Author
 
-Create a file named LICENSE in your repo root and paste this exactly:
+Abhinav N Devadiga
+AI & Computer Vision Developer
+Smart Sports Analytics & Officiating Systems
 
-MIT License
 
-Copyright (c) 2025 Abhinav N Devadiga
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## ✅ FINAL STEP (Push to GitHub)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-✅ Final Steps to Push
-git add README.md LICENSE
-git commit -m "Organized README layout and added MIT license"
+```bash
+git add README.md
+git commit -m "Professional dark-mode README with organized visuals"
 git push origin main
